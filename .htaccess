@@ -1,0 +1,4 @@
+#Force non-www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.campusfrancesco.dev [NC]
+RewriteRule ^(.*)$ https://campusfrancesco.dev/$1 [L,R=301]
